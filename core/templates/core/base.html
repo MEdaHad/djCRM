@@ -45,7 +45,22 @@
         {% endif %}
       </div>
     </nav>
-    {% block content %} {% endblock %}
+
+    {% if messages %}
+      <div class="py-6 px-6">
+        {% for message in messages %}
+        <div class="py-4 px-4 bg-teal-300 text-white rounded-xl">
+          {{ message }}
+        </div>
+        {% endfor %}
+      </div>
+    {% endif %} 
+
+
+
+
+    {% block content %}
+    {% endblock %}
 
     <footer class="py-8 text-center bg-gray-200">
       <p class="text-xs text-gray-700">Copyright (c) 2023 - Django CRM</p>
