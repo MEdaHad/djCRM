@@ -25,8 +25,11 @@
         <p class="mb-6 ">{{ lead.modified_at }}</p>
 
         <hr class="my-4">
-        <a href="{% url 'leads_edit' lead.id %}">Edit</a>
-        <a href="{% url 'leads_delete' lead.id %}">Delete</a>
+        
+        <a href="{% url 'leads_edit' lead.id %}" class="py-2 px-4 rounded-xl bg-teal-500 text-white">Edit</a>
+
+        <a href="{% url 'leads_delete' lead.id %}" class="py-2 px-4 rounded-xl bg-red-500 text-white">Delete</a>
+
         <hr class="my-4">
 
         <a href="{% url 'leads_list' %}">Back to leads</a>
