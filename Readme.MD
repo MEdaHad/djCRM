@@ -51,5 +51,3 @@ The following environment variables need to be set:
 
    3 .Create a pull request.
 
-
-## Acknowledgments
